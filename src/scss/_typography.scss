@@ -1,0 +1,29 @@
+//GLOBAL 
+body {
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+
+// BUTTONS
+.btn {
+    &,
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-transform: capitalize;
+      text-decoration: none;
+      padding: 1.4rem 3.2rem;
+      border-radius: 2.8rem;
+      transition: all 0.2s;
+      position: relative;
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      letter-spacing: .5px;  
+      color: white; 
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+}

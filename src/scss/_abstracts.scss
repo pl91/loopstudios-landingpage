@@ -1,0 +1,42 @@
+// GLOBAL VARIABLES
+:root {
+    --color-blue-1: #666CA3;
+    --color-blue-2: #13183F;
+
+    --color-pink-1: #FFA7C3;
+    --color-pink-2: #F74780;
+
+    --color-grey: #83869A;
+    --color-white: #FFF;
+}
+
+// MIXINS
+@mixin gradient-primary {
+    background-image: linear-gradient(180deg, rgba(255, 111, 72, 1),rgba(240, 42, 166, 1));
+}
+
+@mixin gradient-primary-hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+@mixin gradient-secondary {
+    background-image: linear-gradient(180deg, rgba(77,81,255,1), rgba(240, 42, 166, 1));   
+}
+
+@mixin gradient-secondary-hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+// UTILITY CLASS 
+
+.pt-sm {margin-top: 1rem;}
+.pt-md {margin-top: 2rem;}
+.pt-lg {margin-top: 3rem;}
+.pb-sm {margin-bottom: 1rem;}
+.pb-md {margin-bottom: 2rem;}
+.pb-lg {margin-bottom: 3rem;}
+     
+// RESPONSIVE BREAKPOINTS
+$bp-l: 80.3125em; //   1285px / 16 = 80.3125em
+$bp-m: 69.6875em; //   1115px / 16 = 69.6875em
+$bp-s: 63.75em; //   1020px / 16 = 63.75em
