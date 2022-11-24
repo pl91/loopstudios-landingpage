@@ -1,13 +1,13 @@
 // GLOBAL VARIABLES
 :root {
-    --color-blue-1: #666CA3;
-    --color-blue-2: #13183F;
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
 
-    --color-pink-1: #FFA7C3;
-    --color-pink-2: #F74780;
+    --color-grey-100: hsl(0, 0%, 55%);
+    --color-grey-200: hsl(0, 0%, 41%);
 
-    --color-grey: #83869A;
-    --color-white: #FFF;
+    --font-body:'Alata', sans-serif;
+    --font-heading:'Josefin Sans', sans-serif;
 }
 
 // MIXINS
@@ -17,14 +17,6 @@
 
 @mixin gradient-primary-hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-}
-
-@mixin gradient-secondary {
-    background-image: linear-gradient(180deg, rgba(77,81,255,1), rgba(240, 42, 166, 1));   
-}
-
-@mixin gradient-secondary-hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 
 // UTILITY CLASS 
