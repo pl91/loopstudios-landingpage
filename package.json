@@ -1,0 +1,17 @@
+{
+  "name": "app-boilerplate",
+  "version": "1.0.0",
+  "description": "parcel/scss boilerplate",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "dev": "parcel --open chrome",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Paul Liani",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0"
+  }
+}
