@@ -29,6 +29,7 @@ a {
 // GRID CONTAINER
 .container {
     display: grid;
-    grid-template-rows: repeat(4, min-content);
-    grid-template-columns: [full-start] .95fr [middle-start] repeat(6, 1fr) [middle-end] .95fr [full-end];
+    grid-template-rows: repeat(5, max-content);
+    grid-template-columns: [full-start] 1fr [middle-start] repeat(6, 1fr) [middle-end] 1fr [full-end];
+    row-gap: 18.4rem;
 }

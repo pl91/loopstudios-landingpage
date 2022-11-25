@@ -22,11 +22,13 @@
 // UTILITY CLASS 
 
 .pt-sm {margin-top: 1rem;}
-.pt-md {margin-top: 2rem;}
+.pt-md {margin-top: 2.5rem;}
 .pt-lg {margin-top: 3rem;}
 .pb-sm {margin-bottom: 1rem;}
-.pb-md {margin-bottom: 2rem;}
+.pb-md {margin-bottom: 2.5rem;}
 .pb-lg {margin-bottom: 3rem;}
+
+.lighten {opacity: .5;}
      
 // RESPONSIVE BREAKPOINTS
 $bp-l: 80.3125em; //   1285px / 16 = 80.3125em
