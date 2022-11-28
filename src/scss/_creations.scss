@@ -2,9 +2,24 @@
   grid-row: 3 / 4;
   grid-column: middle-start / middle-end;
 
+  display: grid;
+
   &__heading {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp-xxxs) {
+      grid-row: 1 / 2;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+
+    @media only screen and (max-width: $bp-xxxs) {
+      grid-row: 3 / 4;
+    }
   }
 
   &__gallery {
@@ -17,22 +32,38 @@
     max-width: 111.45rem;
     margin: 0 auto;
     margin-top: 8.4rem;
+
+    @media only screen and (max-width: $bp-xxs) {
+      margin-top: 4.8rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: $bp-xxxs) {
+      grid-template-columns: 1fr;
+    }
   }
 
-
   &__img-box {
+    background-color: var(--color-black);
+
+    &:hover {
+      background-color: var(--color-white);
+    }
 
     &:hover > .creations__title {
-        color: var(--color-black);
+      color: var(--color-black);
     }
 
     &:hover > .creations__picture {
-        opacity: .35;
+      opacity: 0.35;
+      mask-image: none;
     }
   }
 
   &__picture {
-    filter: brightness(0.8) saturate(1.2) contrast(1.2);
+   
+    filter: contrast(1.2);
+    mask-image: linear-gradient(to top, rgb(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
   }
 
   &__title {
@@ -41,6 +72,12 @@
     z-index: 10;
     margin-top: -10rem;
     margin-left: 4rem;
+
+    @media only screen and (max-width: $bp-s) {
+      max-width: 14rem;
+      margin-top: -6.5rem;
+      margin-left: 2rem;
+    }
 
     .span {
       max-width: 5rem;
@@ -51,6 +88,6 @@
   &__picture,
   &__title {
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 }

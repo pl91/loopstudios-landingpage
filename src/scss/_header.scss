@@ -39,6 +39,10 @@
     gap: 3.2rem;
     list-style: none;
     color: var(--color-white);
+
+    @media only screen and (max-width: $bp-xs) {
+      display: none;
+    }
   }
 
   &__heading {
@@ -52,6 +56,10 @@
     padding: 4rem;
     margin-bottom: 14.6rem;
     position: relative;
+
+    @media only screen and (max-width: $bp-s) {
+      max-width: 46rem;
+    }
   }
 
   &__logo, 

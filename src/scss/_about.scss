@@ -6,13 +6,18 @@
   display: flex;
   justify-content: space-between;
 
+  @media only screen and (max-width: $bp-xs) {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+   }
+  
+
   &__image-box {
-    // background-color: aqua;
     min-width: max-content;
 
     @media only screen and (max-width: $bp-m) {
-    min-width: min-content;
-    align-self: center;
+      min-width: min-content;
     }
   }
 
@@ -37,8 +42,28 @@
       max-width: 50rem;
     }
 
-    @media only screen and (max-width: $bp-xs) {
-      left: -12rem;
+    @media only screen and (max-width: $bp-s) {
+      padding-top: 3.6rem;
+      padding-left: 3.6rem;
+      min-width: 30rem;
+      max-width: 40rem;
+      left: -10rem;
     }
-}
+
+    @media only screen and (max-width: $bp-xs) {
+      left: 0;
+      padding-top: 0;
+      padding-left: 0;
+      min-width: fit-content;
+    
+     }
+  }
+
+  &__heading {
+    margin-bottom: 2.5rem;
+
+    @media only screen and (max-width: $bp-s) {
+      margin-bottom: 1.6rem;
+    }
+  }
 }
