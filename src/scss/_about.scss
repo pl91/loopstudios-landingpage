@@ -7,8 +7,13 @@
   justify-content: space-between;
 
   &__image-box {
-    background-color: aqua;
-    min-width:max-content;
+    // background-color: aqua;
+    min-width: max-content;
+
+    @media only screen and (max-width: $bp-m) {
+    min-width: min-content;
+    align-self: center;
+    }
   }
 
   &__image {
@@ -17,12 +22,23 @@
 
   &__text {
     min-width: 54rem;
-    
+
     background-color: var(--color-white);
     align-self: flex-end;
     padding-top: 9.6rem;
     padding-left: 9.6rem;
     position: relative;
     left: -16rem;
-  }
+
+    @media only screen and (max-width: $bp-m) {
+      padding-top: 6.6rem;
+      padding-left: 6.6rem;
+      min-width: 30rem;
+      max-width: 50rem;
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+      left: -12rem;
+    }
+}
 }

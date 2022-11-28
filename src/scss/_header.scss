@@ -8,6 +8,10 @@
   row-gap: 13rem;
   position: relative;
 
+  @media only screen and (max-width: $bp-l) {
+    grid-template-columns: [full-start] .3fr [middle-start] repeat(6, 1fr) [middle-end] .3fr [full-end];
+    }
+
   &::before {
     content: "";
     width: 100%;
@@ -33,7 +37,6 @@
   &__links {
     display: flex;
     gap: 3.2rem;
-
     list-style: none;
     color: var(--color-white);
   }
@@ -49,5 +52,10 @@
     padding: 4rem;
     margin-bottom: 14.6rem;
     position: relative;
+  }
+
+  &__logo, 
+  &__links{
+    cursor: pointer;
   }
 }

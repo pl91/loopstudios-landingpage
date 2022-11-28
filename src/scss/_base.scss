@@ -2,34 +2,74 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-    line-height: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
-
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem = 10px
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-s) {
+    font-size: 50%;
+  }
 }
 
 img {
-    max-width: 100%;
-    display: block;
-  }
+  max-width: 100%;
+  display: block;
+}
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.link {
+  position: relative;
+
+  ::after {
+    content: "";
+    width: 2.4rem;
+    height: 2px;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: all 0.8s;
+  }
+
+  &:hover > ::after {
+    opacity: 1;
+  }
+}
+
+.logo {
+  transition: all .3s;
+
+  &:hover {
+    opacity: .6;
+  }
 }
 
 // GRID CONTAINER
 .container {
-    display: grid;
-    grid-template-rows: repeat(5, max-content);
-    grid-template-columns: [full-start] 1fr [middle-start] repeat(6, 1fr) [middle-end] 1fr [full-end];
-    row-gap: 18.4rem;
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  grid-template-columns: [full-start] 0.9fr [middle-start] repeat(6, 1fr) [middle-end] 0.9fr [full-end];
+  row-gap: 18.4rem;
+
+  @media only screen and (max-width: $bp-l) {
+    grid-template-columns: [full-start] 0.3fr [middle-start] repeat(6, 1fr) [middle-end] 0.3fr [full-end];
+  }
+
+  @media only screen and (max-width: $bp-s) {
+    row-gap: 12rem;
+  }
 }

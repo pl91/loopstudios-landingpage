@@ -20,7 +20,6 @@
 }
 
 // UTILITY CLASS 
-
 .pt-sm {margin-top: 1rem;}
 .pt-md {margin-top: 2.5rem;}
 .pt-lg {margin-top: 3rem;}
@@ -31,6 +30,8 @@
 .lighten {opacity: .5;}
      
 // RESPONSIVE BREAKPOINTS
-$bp-l: 80.3125em; //   1285px / 16 = 80.3125em
-$bp-m: 69.6875em; //   1115px / 16 = 69.6875em
-$bp-s: 63.75em; //   1020px / 16 = 63.75em
+$bp-l: 89.875em; //   1438px / 16 = 80.3125em
+$bp-m: 83.25em; //  1332px / 16 = 83.25em
+$bp-s: 67.375em; //   1078px / 16 = 67.375em
+$bp-xs: 56.25em; //   900px / 16 = 67.375em
+$bp-xxs: 44.06em; //   705px / 16 = 44.06em

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/main.scss">
+    <link rel="stylesheet" href="scss/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,13 +17,13 @@
     <!-- HEADER START -->
     <header class="header">
       <nav class="header__nav">
-        <img src="assets/logo.svg" alt="logo" class="header__logo" />
-        <ul class="header__links">
-          <li><a>About</a></li>
-          <li><a>Careers</a></li>
-          <li><a>Events</a></li>
-          <li><a>Products</a></li>
-          <li><a>Support</a></li>
+        <a href="#" class="logo header__logo"><img src="assets/logo.svg" alt="logo"/></a>
+        <ul class="links header__links">
+          <li class="link"><a>About</a></li>
+          <li class="link"><a>Careers</a></li>
+          <li class="link"><a>Events</a></li>
+          <li class="link"><a>Products</a></li>
+          <li class="link"><a>Support</a></li>
         </ul>
       </nav>
       <div class="header__heading">
@@ -32,110 +32,116 @@
     </header>
     <!-- HEADER END -->
 
-      <!-- ABOUT START -->
-      <section class="about">
-        <div class="about__image-box">
-          <img src="assets/desktop/image-interactive.jpg" alt="VR image" class="about__image" />
-        </div>
-        <div class="about__text">
-          <h2 class="heading heading--400 pb-md">The leader in interactive VR</h2>
-          <p class="lighten"> 
-            Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe.
-            Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.
-          </p>
-        </div>
-      </section>
-      <!-- ABOUT END -->
+    <!-- ABOUT START -->
+    <section class="about">
+      <div class="about__image-box">
+        <img
+          src="assets/desktop/image-interactive.jpg"
+          alt="VR image"
+          class="about__image"
+        />
+      </div>
+      <div class="about__text">
+        <h2 class="heading heading--400 pb-md">The leader in interactive VR</h2>
+        <p class="lighten">
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </section>
+    <!-- ABOUT END -->
 
-      <!-- CREATIONS START -->
-      <section class="creations">
+    <!-- CREATIONS START -->
+    <section class="creations">
+      <div class="creations__heading">
         <h2 class="heading heading--400">Our Creations</h2>
-        <a href="#" class="btn btn--primary">See All</a>
-        <div class="creations__gallery">
-          <!-- image 1 -->
-          <div class="creations__img-box">
-            <picture class="creations__picture">
-              <img src="#" alt="Creations image" />
-            </picture>
-            <h3 class="heading heading--300">Deep Earth</h3>
-          </div>
-          <!-- image 2 -->
-          <div class="creations__img-box">
-            <picture class="creations__picture">
-              <img src="#" alt="Creations image" />
-            </picture>
-            <h3 class="heading heading--300">Night Arcade</h3>
-          </div>
-          <!-- image 3 -->
-          <div class="creations__img-box">
-            <picture class="creations__picture">
-              <img src="#" alt="Creations image" />
-            </picture>
-            <h3 class="heading heading--300">Soccer Team VR</h3>
-          </div>
-          <!-- image 4 -->
-          <div class="creations__img-box">
-            <picture class="creations__picture">
-              <img src="#" alt="Creations image" />
-            </picture>
-            <h3 class="heading heading--300">The Grid</h3>
-          </div>
-          <!-- image 5 -->
-          <div class="creations__img-box">
-            <picture class="creations__picture">
-              <img src="#" alt="Creations image" />
-            </picture>
-            <h3 class="heading heading--300">From Up Above VR</h3>
-          </div>
-          <!-- image 6 -->
-          <div class="creations__img-box">
-            <picture class="creations__picture">
-              <img src="#" alt="Creations image" />
-            </picture>
-            <h3 class="heading heading--300">Pocket Borealis</h3>
-          </div>
-          <!-- image 7 -->
-          <div class="creations__img-box">
-            <picture class="creations__picture">
-              <img src="#" alt="Creations image" />
-            </picture>
-            <h3 class="heading heading--300">The Curiosity</h3>
-          </div>
-          <!-- image 8 -->
-          <div class="creations__img-box">
-            <picture class="creations__picture">
-              <img src="#" alt="Creations image" />
-            </picture>
-            <h3 class="heading heading--300">Make it Fisheye</h3>
-          </div>
+        <a href="#" class="btn">See All</a>
+      </div>
+      <div class="creations__gallery">
+        <!-- image 1 -->
+        <div class="creations__img-box">
+          <picture class="creations__picture">
+            <img src="assets/desktop/image-deep-earth.jpg" alt="Creations image" />
+          </picture>
+          <h3 class="heading heading--300 creations__title">Deep Earth</h3>
         </div>
-      </section>
-      <!-- CREATIONS END -->
+        <!-- image 2 -->
+        <div class="creations__img-box">
+          <picture class="creations__picture">
+            <img src="assets/desktop/image-night-arcade.jpg" alt="Creations image" />
+          </picture>
+          <h3 class="heading heading--300 creations__title">Night Arcade</h3>
+        </div>
+        <!-- image 3 -->
+        <div class="creations__img-box">
+          <picture class="creations__picture">
+            <img src="assets/desktop/image-soccer-team.jpg" alt="Creations image" />
+          </picture>
+          <h3 class="heading heading--300 creations__title">Soccer Team VR</h3>
+        </div>
+        <!-- image 4 -->
+        <div class="creations__img-box">
+          <picture class="creations__picture">
+            <img src="assets/desktop/image-grid.jpg" alt="Creations image" />
+          </picture>
+          <h3 class="heading heading--300 creations__title"><span class="span">The Grid</span></h3>
+        </div>
+        <!-- image 5 -->
+        <div class="creations__img-box">
+          <picture class="creations__picture">
+            <img src="assets/desktop/image-from-above.jpg" alt="Creations image" />
+          </picture>
+          <h3 class="heading heading--300 creations__title">From Up Above VR</h3>
+        </div>
+        <!-- image 6 -->
+        <div class="creations__img-box">
+          <picture class="creations__picture">
+            <img src="assets/desktop/image-pocket-borealis.jpg" alt="Creations image" />
+          </picture>
+          <h3 class="heading heading--300 creations__title">Pocket Borealis</h3>
+        </div>
+        <!-- image 7 -->
+        <div class="creations__img-box">
+          <picture class="creations__picture">
+            <img src="assets/desktop/image-curiosity.jpg" alt="Creations image" />
+          </picture>
+          <h3 class="heading heading--300 creations__title">The Curiosity</h3>
+        </div>
+        <!-- image 8 -->
+        <div class="creations__img-box">
+          <picture class="creations__picture">
+            <img src="assets/desktop/image-fisheye.jpg" alt="Creations image" />
+          </picture>
+          <h3 class="heading heading--300 creations__title">Make it Fisheye</h3>
+        </div>
+      </div>
+    </section>
+    <!-- CREATIONS END -->
 
-      <!-- FOOTER START -->
-      <footer class="footer">
-        <div class="footer__content">
-          <img src="#" alt="logo" class="footer__logo" />logo
-          <div class="footer__socials">
-            <img src="#" alt="facebook" />
-            <img src="#" alt="twitter" />
-            <img src="#" alt="pinterest" />
-            <img src="#" alt="instagram" />
-          </div>
-          <ul class="footer__links">
-            <li><a>About</a></li>
-            <li><a>Careers</a></li>
-            <li><a>Events</a></li>
-            <li><a>Products</a></li>
-            <li><a>Support</a></li>
-          </ul>
-          <p class="footer__copy">
-            &#169; 2021 Loopstudios. All rights reserved.
-          </p>
+    <!-- FOOTER START -->
+    <footer class="footer">
+      <div class="footer__content">
+        <a href="#" class="logo footer__logo"><img src="assets/logo.svg" alt="logo"/></a>
+        <div class="footer__socials">
+          <img src="assets/icon-facebook.svg" alt="facebook" class="footer__icon"/>
+          <img src="assets/icon-twitter.svg" alt="twitter" class="footer__icon"/>
+          <img src="assets/icon-pinterest.svg" alt="pinterest" class="footer__icon"/>
+          <img src="assets/icon-instagram.svg" alt="instagram" class="footer__icon"/>
         </div>
-      </footer>
-      <!-- FOOTER END -->
+        <ul class="links footer__links">
+          <li class="link"><a>About</a></li>
+          <li class="link"><a>Careers</a></li>
+          <li class="link"><a>Events</a></li>
+          <li class="link"><a>Products</a></li>
+          <li class="link"><a>Support</a></li>
+        </ul>
+        <p class="footer__copy">
+          &#169; 2021 Loopstudios. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
   </body>
 </html>
