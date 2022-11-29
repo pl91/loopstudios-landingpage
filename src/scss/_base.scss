@@ -28,9 +28,10 @@ img {
 a {
   text-decoration: none;
 
+  &,
   &:active,
   &:visited {
-    color: inherit;
+    color: var(--color-white);
   }
 }
 
