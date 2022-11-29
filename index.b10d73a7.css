@@ -330,6 +330,7 @@ a:active, a:visited {
 }
 
 .mobile-menu .header__icon {
+  cursor: pointer;
   justify-self: end;
 }
 
