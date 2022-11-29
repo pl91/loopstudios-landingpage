@@ -102,6 +102,8 @@
   }
 }
 
+////////// MOBILE MENU
+
 .mobile-menu {
   background-color: var(--color-black);
   height: 100vh;
@@ -121,5 +123,6 @@
 
   .header__icon {
   justify-self: end;
+  cursor: pointer;
   }
 }
