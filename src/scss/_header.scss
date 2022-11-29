@@ -12,6 +12,10 @@
     grid-template-columns: [full-start] .3fr [middle-start] repeat(6, 1fr) [middle-end] .3fr [full-end];
     }
 
+    @media only screen and (max-width: $bp-xs) {
+      row-gap: 16.3rem;
+    }
+
   &::before {
     content: "";
     width: 100%;
@@ -32,6 +36,10 @@
     justify-content: space-between;
     margin-top: 6.4rem;
     position: relative;
+
+    @media only screen and (max-width: $bp-xs) {
+      margin-top: 4rem;
+    }
   }
 
   &__links {
@@ -50,6 +58,7 @@
     grid-column: middle-start / middle-end;
 
     max-width: 68rem;
+    min-width: min-content;
     color: var(--color-white);
     text-transform: uppercase;
     border: 2px solid var(--color-white);
@@ -59,6 +68,14 @@
 
     @media only screen and (max-width: $bp-s) {
       max-width: 46rem;
+    }
+
+    @media only screen and (max-width: $bp-xxs) {
+      margin-bottom: 22.7rem;
+    }
+
+    @media only screen and (max-width: $bp-xxxs) {
+      padding: 2.4rem;
     }
   }
 

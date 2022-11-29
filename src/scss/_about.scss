@@ -55,7 +55,10 @@
       padding-top: 0;
       padding-left: 0;
       min-width: fit-content;
-    
+     }
+
+     @media only screen and (max-width: $bp-xxxs) {
+      text-align: center;
      }
   }
 
