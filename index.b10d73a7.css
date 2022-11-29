@@ -141,10 +141,11 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--color-white);
 }
 
 a:active, a:visited {
-  color: inherit;
+  color: var(--color-white);
 }
 
 .link {
