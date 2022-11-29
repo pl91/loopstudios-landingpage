@@ -19,6 +19,10 @@
     @media only screen and (max-width: $bp-m) {
       min-width: min-content;
     }
+
+    @media only screen and (max-width: $bp-xs) {
+      max-width: 50rem;
+    }
   }
 
   &__image {

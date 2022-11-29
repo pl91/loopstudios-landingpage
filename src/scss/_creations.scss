@@ -9,6 +9,7 @@
   @media only screen and (max-width: $bp-xxxs) {
       grid-template-columns: 1fr;
       justify-items: center;
+      margin-top: -3rem;
     }
 
   &__heading {

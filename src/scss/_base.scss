@@ -67,7 +67,7 @@ a {
 .container {
   display: grid;
   grid-template-rows: repeat(4, max-content);
-  grid-template-columns: [full-start] 0.9fr [middle-start] repeat(6, 1fr) [middle-end] 0.9fr [full-end];
+  grid-template-columns: [full-start] 0.8fr [middle-start] repeat(6, 1fr) [middle-end] 0.8fr [full-end];
   row-gap: 18.4rem;
 
   @media only screen and (max-width: $bp-l) {
