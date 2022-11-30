@@ -506,8 +506,11 @@ a, a:active, a:visited {
 
 .creations__picture {
   filter: contrast(1.2);
+  -webkit-mask-image: -webkit-linear-gradient(to top, #0000 0%, #000 100%);
   -webkit-mask-image: linear-gradient(to top, #0000 0%, #000 100%);
+  mask-image: -webkit-linear-gradient(to top, #0000 0%, #000 100%);
   mask-image: linear-gradient(to top, #0000 0%, #000 100%);
+  
 }
 
 .creations__title {
