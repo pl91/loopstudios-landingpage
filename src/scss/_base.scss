@@ -16,8 +16,12 @@ html {
   font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem = 10px
 
   @media only screen and (max-width: $bp-tiny) {
-    font-size: 50%;
+    font-size: 48%;
   }
+}
+
+body {
+  scrollbar-gutter: stable both-edges;
 }
 
 img {
@@ -59,10 +63,16 @@ a {
 .logo {
   transition: all .3s;
 
+  @media only screen and (max-width: $bp-tiny) {
+    max-width: 20rem;
+  }
+
   &:hover {
     opacity: .6;
   }
 }
+
+
 
 // GRID CONTAINER
 .container {
