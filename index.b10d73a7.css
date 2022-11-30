@@ -591,7 +591,6 @@ a, a:active, a:visited {
 }
 
 .footer__socials {
-  flex-direction: row-reverse;
   grid-area: 1 / 6 / 2 / 7;
   justify-self: end;
   gap: 1.6rem;
@@ -600,7 +599,6 @@ a, a:active, a:visited {
 
 @media only screen and (max-width: 50em) {
   .footer__socials {
-    flex-direction: row;
     order: 3;
     align-self: center;
   }
