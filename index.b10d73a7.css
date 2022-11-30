@@ -130,8 +130,12 @@ html {
 
 @media only screen and (max-width: 21.875em) {
   html {
-    font-size: 50%;
+    font-size: 48%;
   }
+}
+
+body {
+  scrollbar-gutter: stable both-edges;
 }
 
 img {
@@ -141,10 +145,9 @@ img {
 
 a {
   text-decoration: none;
-  color: var(--color-white);
 }
 
-a:active, a:visited {
+a, a:active, a:visited {
   color: var(--color-white);
 }
 
@@ -171,6 +174,12 @@ a:active, a:visited {
 
 .logo {
   transition: all .3s;
+}
+
+@media only screen and (max-width: 21.875em) {
+  .logo {
+    max-width: 20rem;
+  }
 }
 
 .logo:hover {
@@ -242,6 +251,7 @@ a:active, a:visited {
 .header__nav {
   grid-column: middle-start / middle-end;
   justify-content: space-between;
+  align-items: center;
   margin-top: 6.4rem;
   display: flex;
   position: relative;
@@ -272,9 +282,8 @@ a:active, a:visited {
 
 @media only screen and (max-width: 56.25em) {
   .header__icon {
+    cursor: pointer;
     display: block;
-    position: relative;
-    top: 9px;
   }
 }
 
@@ -314,9 +323,11 @@ a:active, a:visited {
 
 .mobile-menu {
   background-color: var(--color-black);
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100%;
+  grid-template-rows: min-content min-content;
   grid-template-columns: repeat(2, max-content);
+  gap: 20%;
   padding: 4rem 2.4rem;
   display: grid;
   position: relative;
@@ -327,12 +338,8 @@ a:active, a:visited {
 .mobile-menu .header__links {
   flex-direction: column;
   grid-row: 2 / 3;
+  gap: 2.4rem;
   display: flex;
-}
-
-.mobile-menu .header__icon {
-  cursor: pointer;
-  justify-self: end;
 }
 
 .about {
@@ -596,7 +603,6 @@ a:active, a:visited {
     flex-direction: row;
     order: 3;
     align-self: center;
-    margin-left: -12rem;
   }
 }
 
