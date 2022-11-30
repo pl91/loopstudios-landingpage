@@ -53,11 +53,9 @@
     grid-column: 6 / 7;
     justify-self: end;
     display: flex;
-    flex-direction: row-reverse;
     gap: 1.6rem;
 
     @media only screen and (max-width: $bp-xxs) {
-      flex-direction: row;
       align-self: center;
       order: 3;
     }
